@@ -1,0 +1,314 @@
+/* Step 9: Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #EBEDE3;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Step 10: Header Styles */
+header {
+    background-color: #0B1849;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(11, 24, 73, 0.3);
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: #E4B028;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0.5rem 0;
+}
+
+nav ul li a:hover {
+    color: #E4B028;
+    border-bottom: 2px solid #E4B028;
+}
+
+/* Step 4: Hero Section */
+.hero {
+    background: linear-gradient(135deg, #0B1849 0%, #124D1C 100%);
+    color: white;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #E4B028;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    color: #EBEDE3;
+}
+
+/* Step 5: About Section */
+.about {
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.about h2 {
+    color: #0B1849;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.about p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Step 11: Projects Section */
+.projects {
+    padding: 4rem 0;
+    background-color: #EBEDE3;
+}
+
+.projects h2 {
+    color: #0B1849;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    background: #BAE5D5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #0B1849;
+}
+
+.project-card h3 {
+    color: #0B1849;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Step 11: Contact Section */
+.contact {
+    padding: 4rem 0;
+    background: white;
+}
+
+.contact h2 {
+    color: #0B1849;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input,
+form textarea {
+    padding: 12px 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+    background-color: #EBEDE3;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #D7ACD4;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: #124D1C;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #0B1849;
+    transform: scale(1.02);
+}
+
+#formMessage {
+    max-width: 500px;
+    margin: 1rem auto 0;
+    text-align: center;
+    font-weight: 500;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+/* Step 8: Footer */
+footer {
+    background-color: #0B1849;
+    color: #EBEDE3;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer p {
+    font-size: 0.95rem;
+}
+
+/* Step 14: Responsive Design */
+@media (max-width: 768px) {
+
+    /* Stack header vertically */
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 0.3rem 0;
+    }
+
+    /* Hero section adjustments */
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* Project cards stack */
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 20px;
+    }
+
+    /* Section headings */
+    .about h2,
+    .projects h2,
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    /* Form adjustments */
+    form {
+        padding: 0 20px;
+    }
+
+    .about p {
+        padding: 0 20px;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .logo h1 {
+        font-size: 1.4rem;
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.9rem;
+    }
+}

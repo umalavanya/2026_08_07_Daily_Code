@@ -1,0 +1,121 @@
+🟢 BEGINNER LEVEL - TASK 1
+Build a Static Personal Portfolio Page
+Technologies: HTML, CSS, JavaScript (basic)
+
+Task Description:
+Create a single-page personal portfolio with:
+
+A header with your name and navigation links (Home, About, Projects, Contact)
+A hero section with a welcome message
+An "About Me" section with a short bio
+A "Projects" section with 3 project cards (use placeholder content)
+A "Contact" section with a simple form (name, email, message fields)
+A footer with copyright text
+
+Requirements:
+
+Use semantic HTML5 elements
+Style with CSS (flexbox/grid, colors, responsive design)
+Add basic JavaScript for form validation (check if fields are empty before "submitting")
+Make it look professional and clean
+
+Bonus (optional):
+
+Make it mobile-responsive
+Add smooth scrolling
+When you complete this, say "next" and I'll give you Task 2. Good luck! 🚀
+
+----------------------------------------------------------
+📋 MICRO-STEPS FOR TASK 1
+----------------------------------------------------------
+Step 1: Set up your project folder
+Create a folder named portfolio
+Inside, create three files: index.html, style.css, script.js
+------------------------------------------------------------
+Step 2: Create the HTML structure
+Add basic HTML boilerplate in index.html (<!DOCTYPE html>, <html>, <head>, <body>)
+Link your CSS file (<link rel="stylesheet" href="style.css">)
+Link your JavaScript file (<script src="script.js"> at the end of body)
+----------------------------------------------------------------
+Step 3: Build the Header
+Add a <header> tag
+Inside, add your name in an <h1> or <h2>
+Add a <nav> with an unordered list <ul> containing:
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+-------------------------------------------------------------------
+Step 4: Create the Hero Section
+Add a <section id="home">
+Inside, add a <h1> with "Welcome to My Portfolio"
+Add a <p> with a short tagline (e.g., "I'm a passionate developer")
+--------------------------------------------------------------
+Step 5: Build the About Section
+Add a <section id="about">
+Add an <h2> heading "About Me"
+Add a <p> with a 2-3 sentence bio about yourself
+----------------------------------------------------------
+Step 6: Create the Projects Section
+Add a <section id="projects">
+Add an <h2> heading "My Projects"
+Create 3 <div> or <article> cards, each containing:
+A project title (<h3>)
+A short description (<p>)
+A placeholder image or icon (or use a colored box)
+--------------------------------------------------------------
+Step 7: Build the Contact Section
+Add a <section id="contact">
+Add an <h2> heading "Contact Me"
+Add a <form> with:
+<input type="text" id="name" placeholder="Your Name">
+<input type="email" id="email" placeholder="Your Email">
+<textarea id="message" placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+---------------------------------------------------------------
+Step 8: Add the Footer
+Add a <footer> at the bottom
+Add a <p> with "© [Year] Your Name. All rights reserved."
+-----------------------------------------------------
+Step 9: Style with CSS (Part 1 - Layout)
+Reset default margins/padding (* { margin: 0; padding: 0; box-sizing: border-box; })
+Style the header with flexbox (name on left, nav on right)
+Style sections with padding and max-width
+---------------------------------------------------------------
+Step 10: Style with CSS (Part 2 - Colors & Typography)
+Choose a color scheme (e.g., dark header, light background)
+Style fonts, sizes, and spacing
+Style navigation links (remove bullets, add hover effects)
+------------------------------------------------------------
+Step 11: Style with CSS (Part 3 - Cards & Form)
+Style project cards with borders, shadows, and spacing
+Style form inputs with padding, borders, and width
+Style the submit button with colors and hover effect
+---------------------------------------------------------------
+Step 12: Add JavaScript Form Validation
+In script.js, select the form (document.querySelector('form'))
+Add an event listener for 'submit'
+Prevent default form submission (e.preventDefault())
+Get values of name, email, and message fields
+Check if any field is empty
+If empty, show an alert or error message
+If all filled, show a success message
+-----------------------------------------------------------------
+Step 13: Test Your Page
+Open index.html in your browser
+Check if all sections are visible
+Test navigation links (they should jump to sections)
+Test form validation (try submitting empty fields)
+----------------------------------------------------------------
+Step 14: Make it Responsive (Bonus)
+Add a media query for screens smaller than 768px
+Stack header elements vertically on mobile
+Make project cards stack in a single column
+Adjust font sizes for smaller screens
+--------------------------------------------------------------
+Step 15: Final Polish
+Check for typos
+Make sure indentation is clean
+Add comments in your code
+Take a screenshot of your finished page
+--------------------------------------------

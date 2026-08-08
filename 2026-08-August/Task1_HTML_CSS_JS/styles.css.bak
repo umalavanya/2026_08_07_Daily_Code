@@ -1,0 +1,86 @@
+:root{
+    --primary-color : maroon ;
+    --font-color-light: white ;
+}
+
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div{
+    padding: 20px ;
+    margin: 20px ;
+    background-color: rgb(172, 172, 141) ;
+    border: 1px solid black ;
+    border-radius: 10px ;
+    box-shadow: 2px 2px 2px black 2% ;
+}
+
+h1, h2{
+
+    color: red
+}
+
+header{
+    background-color: maroon ;
+}
+
+footer{
+    background-color: black;
+    color: white ;
+    display: flex ;
+    gap: 50px ;
+
+}
+
+ul{
+    list-style-type: none;
+    display: flex ;
+    flex-direction: row ;
+    justify-content: space-between;
+    align-items: center ;
+
+}
+
+a{
+    text-decoration: none;
+    color: white ;
+    font-size: 20px ;
+}
+
+a:hover{
+    transform: translate(1.2em);
+    color: yellow ;
+}
+#contacts{
+    padding: 1.2rem ;
+    background-color: aquamarine;
+    
+}
+form{
+    padding: 1.5rem ;
+}
+
+input{
+    padding: 10px ;
+    border-radius: 10px ;
+}
+
+button{
+    padding: 10px ;
+    font-size: 18px;
+    border-radius: 10px ;
+
+}
+
+button:hover{
+    transform: scale(1.5em);
+    background-color: maroon;
+}

@@ -1,0 +1,193 @@
+BEGINNER LEVEL - TASK 2
+Build a JavaScript To-Do List App
+Technologies: HTML, CSS, JavaScript (DOM manipulation, local storage)
+
+Task Description:
+Create a functional to-do list application where users can:
+
+Add new tasks to a list
+
+Mark tasks as complete (strikethrough)
+
+Delete tasks from the list
+
+See their tasks persist after refreshing the page
+
+Requirements:
+
+An input field and an "Add Task" button
+
+Each task should display as a list item with:
+
+Task text
+
+A "Complete" button (toggles strikethrough)
+
+A "Delete" button (removes the task)
+
+Tasks should be saved in the browser's localStorage
+
+When the page loads, saved tasks should automatically appear
+
+Display a counter showing total tasks and completed tasks
+
+Bonus (optional):
+
+Allow editing of task text (double-click to edit)
+
+Add a "Clear All Completed" button
+
+Add task categories or priority levels
+
+📋 MICRO-STEPS FOR TASK 2
+Step 1: Set up files
+Create folder todo-app
+
+Create index.html, style.css, script.js
+
+Step 2: HTML Structure
+Add a container div
+
+Add an <h1> "My To-Do List"
+
+Add an input field with id="taskInput"
+
+Add a button "Add Task" with id="addBtn"
+
+Add an empty <ul id="taskList"> to hold tasks
+
+Add a <div id="taskStats"> to show counters
+
+Step 3: CSS Styling
+Style the app container (centered, max-width, card-like)
+
+Style input and button (inline, spacing)
+
+Style task items (flex layout, spacing between text and buttons)
+
+Style completed tasks (text-decoration: line-through, color gray)
+
+Style buttons with different colors (green for complete, red for delete)
+
+Step 4: JavaScript - Add Task Function
+Select the input, button, and task list
+
+Create addTask() function that:
+
+Gets input value
+
+Checks if empty (alert if empty)
+
+Creates new <li> element
+
+Adds task text
+
+Creates "Complete" and "Delete" buttons
+
+Appends everything to task list
+
+Clears input field
+
+Calls saveTasks() to save to localStorage
+
+Step 5: JavaScript - Complete Task Function
+Add event listener to "Complete" button
+
+Toggle a completed class on the task <li>
+
+Update task stats
+
+Call saveTasks() after toggling
+
+Step 6: JavaScript - Delete Task Function
+Add event listener to "Delete" button
+
+Remove the task <li> from the list
+
+Update task stats
+
+Call saveTasks() after deleting
+
+Step 7: JavaScript - Task Stats
+Create updateStats() function that:
+
+Counts total tasks (number of <li> elements)
+
+Counts completed tasks (those with completed class)
+
+Updates the stats display with these numbers
+
+Step 8: JavaScript - Save to localStorage
+Create saveTasks() function that:
+
+Gets all task texts and their completed status
+
+Creates an array of objects { text: "...", completed: true/false }
+
+Converts to JSON and saves in localStorage
+
+Step 9: JavaScript - Load from localStorage
+Create loadTasks() function that:
+
+Gets data from localStorage
+
+Parses JSON back to array
+
+Loops through array and recreates each task using addTask()
+
+Only runs on page load
+
+Step 10: Combine all functions
+Call loadTasks() when page loads (window.onload or DOMContentLoaded)
+
+Make sure addTask() calls saveTasks() and updateStats()
+
+Make sure complete/delete functions also update stats and save
+
+Step 11: Test thoroughly
+Add a few tasks
+
+Complete some, delete some
+
+Refresh the page - tasks should still be there
+
+Check stats update correctly
+
+Step 12: Bonus - Edit Feature (optional)
+Add double-click event on task text
+
+Replace text with an input field
+
+Allow editing and saving with Enter key
+
+Step 13: Bonus - Clear Completed (optional)
+Add a "Clear Completed" button
+
+Remove all tasks with completed class
+
+Step 14: Polish
+Add hover effects
+
+Add smooth transitions
+
+Make it mobile responsive
+
+Add a nice color theme
+
+Step 15: Final Testing
+Test all features
+
+Test edge cases (adding empty tasks, deleting while empty, etc.)
+
+🎯 What you're learning:
+DOM manipulation
+
+Event handling
+
+localStorage for persistence
+
+Array methods and object manipulation
+
+Conditional styling
+
+CRUD operations (Create, Read, Update, Delete)

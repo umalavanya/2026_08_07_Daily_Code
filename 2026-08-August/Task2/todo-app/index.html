@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-wrapper">
+    <section class="todo-app">
+      <header class="app-header">
+        <div>
+          <p class="eyebrow">Daily Planner</p>
+          <h1>My To-Do List</h1>
+        </div>
+        <div class="header-icon" aria-hidden="true">
+          <span>✓</span>
+        </div>
+      </header>
+
+      <section class="task-form-section">
+        <div class="input-group task-title-row">
+          <label class="sr-only" for="taskInput">Task name</label>
+          <input type="text" id="taskInput" placeholder="Add a new task..." autocomplete="off" />
+          <button id="addBtn" class="primary-btn">Add Task</button>
+        </div>
+
+        <div class="task-form-grid">
+          <div class="field-group">
+            <label for="priorityInput">Priority level</label>
+            <select id="priorityInput">
+              <option value="High">High</option>
+              <option value="Medium" selected>Medium</option>
+              <option value="Low">Low</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="assignedByInput">Assigned by</label>
+            <input type="text" id="assignedByInput" placeholder="Manager or team" />
+          </div>
+
+          <div class="field-group">
+            <label for="assignedToInput">Assigned to</label>
+            <input type="text" id="assignedToInput" placeholder="Name" />
+          </div>
+
+          <div class="field-group">
+            <label for="deadlineDateInput">Deadline date</label>
+            <input type="date" id="deadlineDateInput" />
+          </div>
+
+          <div class="field-group">
+            <label for="deadlineTimeInput">Deadline time</label>
+            <input type="time" id="deadlineTimeInput" />
+          </div>
+
+          <div class="field-group">
+            <label for="startDateInput">Starting day</label>
+            <input type="date" id="startDateInput" />
+          </div>
+
+          <div class="field-group">
+            <label for="startTimeInput">Starting time</label>
+            <input type="time" id="startTimeInput" />
+          </div>
+
+          <div class="field-group">
+            <label for="endDateInput">Ending date</label>
+            <input type="date" id="endDateInput" />
+          </div>
+
+          <div class="field-group">
+            <label for="endTimeInput">Ending time</label>
+            <input type="time" id="endTimeInput" />
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-bar">
+        <div id="taskStats" class="task-stats">
+          <span id="totalTasks">0</span> total
+          <span class="divider">|</span>
+          <span id="completedTasks">0</span> completed
+        </div>
+        <button id="clearCompletedBtn" class="secondary-btn">Clear Completed</button>
+      </section>
+
+      <section class="task-list-section">
+        <ul id="taskList" class="task-list"></ul>
+      </section>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
